@@ -1,3 +1,4 @@
+import re
 # 1 uzd
 aktoriai = ['Johny Depp', 'Jensen Ackles']
 trump_str = min(aktoriai, key=len)
@@ -37,7 +38,19 @@ filmo_pav = 'An American in Paris'
 changes = filmo_pav.replace('a','*').replace('A', '*')
 print(changes)
 
+# 6 uzd.
+old_name = 'An American in Paris'
+new_name = re.sub('[AaĄąEeĖėIiĮįYyOoUuŲųŪū]', '', old_name)
+print(new_name)
 
+old_name1 = "Breakfast at Tiffany's"
+new_name1 = re.sub('[AaĄąEeĖėIiĮįYyOoUuŲųŪū]', '', old_name1)
+print(new_name1)
 
+old_name2 = "2001: A Space Odyssey"
+new_name2 = re.sub('[AaĄąEeĖėIiĮįYyOoUuŲųŪū]', '', old_name2)
+print(new_name2)
 
-
+old_name3 = "It's a Wonderful Life"
+new_name3 = re.sub('[AaĄąEeĖėIiĮįYyOoUuŲųŪū]', '', old_name3)
+print(new_name3)
