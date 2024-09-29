@@ -32,6 +32,12 @@ print(short_name)
 
 # kaip veikia?
 
+# 5 uzd
+filmo_pav = 'An American in Paris'
+changes = filmo_pav.replace('a','*').replace('A', '*')
+print(changes)
+
+
 
 
 
